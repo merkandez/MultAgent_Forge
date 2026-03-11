@@ -1,6 +1,6 @@
 from crewai import Agent, LLM
 from config import get_llm
-from tools import DiceTools
+from tools import roll_dice
 
 # Configuramos el LLM explícitamente para CrewAI para evitar que busque OpenAI
 llm_ollama = LLM(model="ollama/llama3", base_url="http://localhost:11434")
@@ -31,7 +31,7 @@ azar = Agent(
     goal='Aportar elementos aleatorios y tirar dados para definir rasgos únicos.',
     backstory='Eres la personificación del azar. Tu palabra es ley cuando los dados dictan el destino.',
     llm=llm_ollama,
-    tools=[DiceTools.roll_dice],
+    tools=[roll_dice],
     allow_delegation=False,
     verbose=True
 )

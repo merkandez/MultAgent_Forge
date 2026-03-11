@@ -1,7 +1,8 @@
-crewai
+crewai[litellm]
 langchain
 langchain-core
 langchain-community
 langchain-ollama
 ollama
+litellm
 python-dotenv
