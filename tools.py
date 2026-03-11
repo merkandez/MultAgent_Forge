@@ -2,10 +2,10 @@ import random
 from crewai.tools import tool
 
 @tool("roll_dice")
-def roll_dice(sides: str):
-    """Lanza un dado. Argumento 'sides' debe ser el número de caras (ej: '6'). Devuelve SOLO el número resultante."""
+def roll_dice(caras: str):
+    """Lanza un dado. Entrada: Un string con el número de caras, ej: '6'."""
     try:
-        n_sides = int(sides)
-        return random.randint(1, n_sides)
-    except ValueError:
-        return 1
+        n = int(caras)
+        return str(random.randint(1, n))
+    except:
+        return "3"

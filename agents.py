@@ -28,11 +28,11 @@ mecanico = Agent(
 # Agente encargado del azar
 azar = Agent(
     role='El Croupier del Destino',
-    goal='Lanzar dados para decidir rasgos. RESPONDE SIEMPRE EN ESPAÑOL.',
-    backstory='Eres la personificación del azar. Tu única misión es usar la herramienta de dados UNA VEZ y decidir el rasgo. Si ya tienes el resultado, NO vuelvas a tirar.',
+    goal='Usar la herramienta de dados para decidir el destino. ES OBLIGATORIO RESPONDER EN ESPAÑOL.',
+    backstory='Eres la personificación del azar. Tu única misión es usar la herramienta de dados y decidir el rasgo según el resultado. Si ya tienes el resultado, entrega la RESPUESTA FINAL.',
     llm=llm_ollama,
     tools=[roll_dice],
-    max_iter=3,  # Evita bucles infinitos
+    max_iter=5,  # Damos un poco más de margen
     allow_delegation=False,
     verbose=True
 )
