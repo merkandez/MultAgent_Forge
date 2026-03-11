@@ -1,7 +1,9 @@
 from crewai import Agent
 from config import get_llm
+from tools import DiceTools
 
 llm = get_llm()
+dice_tool = DiceTools.roll_dice
 
 # Agente encargado de la parte creativa y narrativa
 narrador = Agent(
@@ -29,6 +31,7 @@ azar = Agent(
     goal='Aportar elementos aleatorios y tirar dados para definir rasgos únicos.',
     backstory='Eres la personificación del azar. Tu palabra es ley cuando los dados dictan el destino.',
     llm=llm,
+    tools=[dice_tool],
     allow_delegation=False,
     verbose=True
 )
