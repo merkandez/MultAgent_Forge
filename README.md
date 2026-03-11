@@ -18,9 +18,9 @@ El proyecto se basa en **Agentic AI** utilizando el framework **CrewAI** y model
 ## 🛠️ Instalación y Requisitos
 
 ### 1. Ollama
-Descarga e instala Ollama desde [ollama.com](https://ollama.com). Una vez instalado, descarga el modelo necesario:
+Descarga e instala Ollama desde [ollama.com](https://ollama.com). Una vez instalado, descarga el modelo recomendado (más ligero y rápido):
 ```bash
-ollama pull llama3
+ollama pull phi4
 ```
 
 ### 2. Entorno Python
