@@ -1,5 +1,5 @@
 import random
-from langchain.tools import tool
+from langchain_core.tools import tool
 
 class DiceTools:
     @tool("roll_dice")
