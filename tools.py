@@ -1,5 +1,5 @@
 import random
-from langchain_core.tools import tool
+from crewai.tools import tool
 
 @tool("roll_dice")
 def roll_dice(sides: str):
