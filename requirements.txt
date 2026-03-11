@@ -1,4 +1,7 @@
 crewai
+langchain
+langchain-core
 langchain-community
+langchain-ollama
 ollama
 python-dotenv
