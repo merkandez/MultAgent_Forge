@@ -1,7 +1,6 @@
-from langchain_community.chat_models import ChatOllama
+from langchain_ollama import ChatOllama
 
-# Configuración del modelo local usando Ollama
-# Asegúrate de tener Ollama corriendo y el modelo descargado: ollama pull llama3
+# Configuración del modelo usando la librería más reciente
 def get_llm():
     return ChatOllama(
         model="llama3",
