@@ -43,5 +43,14 @@ Al finalizar la ejecución, el sistema:
 1.  Muestra la ficha en la terminal.
 2.  **Auto-guarda** un archivo `.md` con un nombre basado en tu idea y una marca de tiempo (ej: `ficha_Guerrero_Oscuro_20231027_1200.md`). Esto te permite tener un historial de todos tus personajes creados.
 
+## 🎨 Ideas para tu Personaje
+¿No sabes por dónde empezar? Prueba a copiar y pegar alguna de estas ideas en la forja:
+
+*   **El Destilador de Memorias:** "Un alquimista ciego que extrae recuerdos de los muertos para ver el futuro a través de sus vapores."
+*   **La Dama de Mercurio:** "Una guerrera cuya armadura se fundió a su piel tras un accidente alquímico; es rápida pero su cuerpo es tóxico."
+*   **El Erudito del Abismo:** "Un monje herbolario que cultiva hongos brillantes en sus propias heridas para crear medicinas prohibidas."
+*   **El Autómata Poeta:** "Un ser de latón y engranajes que está convencido de que posee el alma de un príncipe asesinado."
+*   **La Sombra de Ceniza:** "Una ladrona que puede transformarse en humo negro, aunque cada vez que lo hace, olvida el rostro de alguien a quien amó."
+
 ---
 *Este proyecto fue desarrollado con fines didácticos para explorar NLP, Transformers y Sistemas Multiagente.*
