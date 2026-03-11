@@ -1,8 +1,8 @@
 from langchain_ollama import ChatOllama
 
-# Configuración del modelo usando la librería más reciente
+# Usamos phi4 por ser más ligero y rápido que llama3
 def get_llm():
     return ChatOllama(
-        model="llama3",
+        model="phi4",
         base_url="http://localhost:11434"
     )

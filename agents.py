@@ -2,8 +2,8 @@ from crewai import Agent, LLM
 from config import get_llm
 from tools import roll_dice
 
-# Configuramos el LLM explícitamente para CrewAI
-llm_ollama = LLM(model="ollama/llama3", base_url="http://localhost:11434")
+# Configuramos el LLM explícitamente para CrewAI para usar phi4
+llm_ollama = LLM(model="ollama/phi4", base_url="http://localhost:11434")
 
 # Agente encargado de la parte creativa y narrativa
 narrador = Agent(
