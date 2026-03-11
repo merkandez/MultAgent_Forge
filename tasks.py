@@ -15,11 +15,12 @@ tarea_concepcion = Task(
 # Tarea 2: Determinar un rasgo por azar
 tarea_azar = Task(
     description=(
-        "1. Usa la herramienta 'roll_dice' con sides='6'. "
-        "2. Según el resultado: 1-2='Vínculo Débil', 3-4='Sangre Alquímica', 5-6='Ojo del Abismo'. "
-        "3. Explica brevemente el rasgo en ESPAÑOL."
+        "1. Lanza 1d6 usando 'roll_dice'. "
+        "2. Según el número obtenido, elige el rasgo: 1-2='Vínculo Débil', 3-4='Sangre Alquímica', 5-6='Ojo del Abismo'. "
+        "3. Una vez tengas el rasgo, termina inmediatamente y entrega la descripción en ESPAÑOL. "
+        "No intentes tirar el dado más de una vez."
     ),
-    expected_output="El resultado del dado y el nombre del rasgo obtenido en español.",
+    expected_output="El nombre del rasgo obtenido y su descripción en español.",
     agent=azar
 )
 

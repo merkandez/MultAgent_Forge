@@ -3,10 +3,9 @@ from crewai.tools import tool
 
 @tool("roll_dice")
 def roll_dice(sides: str):
-    """Lanza un dado del número de caras especificado (ej: '6'). Devuelve un número entero."""
+    """Lanza un dado. Argumento 'sides' debe ser el número de caras (ej: '6'). Devuelve SOLO el número resultante."""
     try:
         n_sides = int(sides)
-        result = random.randint(1, n_sides)
-        return f"Resultado del dado (1d{sides}): {result}"
+        return random.randint(1, n_sides)
     except ValueError:
-        return "Error: Indica un número válido de caras."
+        return 1
