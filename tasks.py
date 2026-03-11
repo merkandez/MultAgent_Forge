@@ -4,33 +4,32 @@ from agents import narrador, mecanico, azar
 # Tarea 1: Crear la base narrativa
 tarea_concepcion = Task(
     description=(
-        "Analiza la petición del usuario: '{user_input}'. "
-        "Crea un nombre para el personaje, un trasfondo trágico y describe su apariencia "
-        "en el mundo de Æther-Bound."
+        "Analiza la petición: '{user_input}'. "
+        "Inventa un nombre evocador, un trasfondo oscuro y describe su apariencia. "
+        "Escribe todo el resultado en ESPAÑOL."
     ),
-    expected_output="Un párrafo con el nombre, trasfondo y descripción visual del personaje.",
+    expected_output="Nombre, trasfondo y descripción visual en español.",
     agent=narrador
 )
 
 # Tarea 2: Determinar un rasgo por azar
 tarea_azar = Task(
     description=(
-        "Usa la herramienta roll_dice para lanzar 1d6. "
-        "Si el resultado es 1-2: Rasgo 'Vínculo Débil'. "
-        "Si es 3-4: Rasgo 'Sangre Alquímica'. "
-        "Si es 5-6: Rasgo 'Ojo del Abismo'. "
-        "Explica qué significa este rasgo para el personaje."
+        "1. Usa la herramienta 'roll_dice' con sides='6'. "
+        "2. Según el resultado: 1-2='Vínculo Débil', 3-4='Sangre Alquímica', 5-6='Ojo del Abismo'. "
+        "3. Explica brevemente el rasgo en ESPAÑOL."
     ),
-    expected_output="El resultado del dado y la descripción del rasgo obtenido.",
+    expected_output="El resultado del dado y el nombre del rasgo obtenido en español.",
     agent=azar
 )
 
 # Tarea 3: Generar la ficha técnica final
 tarea_ficha = Task(
     description=(
-        "Basándote en la narrativa y el rasgo aleatorio, asigna 10 puntos entre Vigor, Astucia y Esencia. "
-        "Genera una ficha de personaje clara y profesional en formato Markdown."
+        "Toma la historia y el rasgo anterior. Reparte 10 puntos en Vigor, Astucia y Esencia. "
+        "Crea una ficha en Markdown siguiendo este orden: Nombre, Trasfondo, Rasgo, Atributos. "
+        "Todo debe estar en ESPAÑOL."
     ),
-    expected_output="Una ficha de personaje completa en Markdown con Secciones: Nombre, Trasfondo, Rasgo, Atributos.",
+    expected_output="Ficha de personaje completa en Markdown y en español.",
     agent=mecanico
 )
